@@ -1,6 +1,6 @@
 import React from 'react'
 import { IconContext } from "react-icons"
-import { FaGithub, FaLinkedin, FaInstagram  } from "react-icons/fa"
+import { FaGithub, FaLinkedin } from "react-icons/fa"
 import { IoMdOpen } from "react-icons/io";
 import Pdf from '../../assets/resume.pdf'
 import './Home.scss'
