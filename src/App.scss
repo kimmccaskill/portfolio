@@ -48,14 +48,14 @@ html {
   list-style-type: none;
 }
 
-.tab-item :hover {
-  opacity: 70%;
-}
-
 a {
   text-decoration: none;
   color: #000065;
   font-size: 1.5em;
+}
+
+a:hover {
+  opacity: 70%;
 }
 
 .content {
