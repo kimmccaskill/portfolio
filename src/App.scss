@@ -18,6 +18,10 @@ html {
   @media (max-width: 1250px) {
     width: 90%;
   }
+  @media (max-width: 600px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .logo {
@@ -35,6 +39,7 @@ html {
 
 .logo-txt {
   font-family: 'Gill Sans';
+  font-size: .8em;
   margin: 0px;
 }
 
@@ -46,16 +51,20 @@ html {
   padding-left: 5%;
   padding-right: 5%;;
   list-style-type: none;
+  @media (max-width: 700px) {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
 }
 
 a {
   text-decoration: none;
   color: #000065;
   font-size: 1.5em;
-}
-
-a:hover {
-  opacity: 70%;
+  padding: 10px;
+  @media (max-width: 600px) {
+    font-size: 1em;
+  }
 }
 
 .content {
