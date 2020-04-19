@@ -4,7 +4,8 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  NavLink
+  NavLink,
+  Link
 } from "react-router-dom";
 import Home from './components/Home/Home'
 import Projects from './components/Projects/Projects'
@@ -15,7 +16,9 @@ const App = () => {
     <Router>
       <div className='nav-bar'>
         <div className='nav-content'>
-          <div className='logo'><p className='logo-txt'>KM</p></div> 
+          <Link exact to="/">
+            <div className='logo'><p className='logo-txt'>KM</p></div> 
+          </Link>
           <ul className="tab-list">
             <li className='tab-item'>
               <NavLink 
