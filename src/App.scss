@@ -46,9 +46,10 @@ html {
   padding-left: 5%;
   padding-right: 5%;;
   list-style-type: none;
-  :hover {
-    opacity: 70%;
-  }
+}
+
+.tab-item :hover {
+  opacity: 70%;
 }
 
 a {
