@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import {
   BrowserRouter as Router,
   Switch,
@@ -15,14 +15,16 @@ const App = () => {
     <Router>
       <div className='nav-bar'>
         <div className='nav-content'>
-          <div className='logo'>KM</div> 
+          <div className='logo'><p className='logo-txt'>KM</p></div> 
           <ul className="tab-list">
             <li className='tab-item'>
               <NavLink 
                 exact
                 to="/" 
                 activeStyle={{
-                  color: "#000065",
+                  color: "#fff",
+                  paddingBottom: '10px',
+                  borderBottom: '1px solid white'
                 }}
               >HOME</NavLink>
             </li>
@@ -30,7 +32,9 @@ const App = () => {
               <NavLink 
                 to="/projects"
                 activeStyle={{
-                  color: "#000065",
+                  color: "#fff",
+                  paddingBottom: '10px',
+                  borderBottom: '1px solid white'
                 }}
               >PROJECTS</NavLink>
             </li>
@@ -38,26 +42,30 @@ const App = () => {
               <NavLink 
                 to="/about"
                 activeStyle={{
-                  color: "#000065",
+                  color: "#fff",
+                  paddingBottom: '10px',
+                  borderBottom: '1px solid white'
                 }}
               >ABOUT</NavLink>
             </li>
           </ul>
         </div>
       </div>
-      <main class='content'>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/projects">
-            <Projects />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-        </Switch>
-      </main>
+      <div style={{display: 'flex', justifyContent: 'center'}}>
+        <main className='content'>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/projects">
+              <Projects />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+          </Switch>
+        </main>
+      </div>
     </Router>
   );
 }
