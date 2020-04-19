@@ -15,6 +15,10 @@
   background-image: url('../../assets/headshot.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  @media (max-width: 450px) {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 .links-container {
