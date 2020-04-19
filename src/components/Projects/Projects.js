@@ -1,4 +1,5 @@
 import React from 'react'
+import { projectData } from '../../assets/project-data'
 import ProjectsHome from '../ProjectsHome/ProjectsHome'
 import Project from '../Project/Project'
 import './Projects.scss'
@@ -12,11 +13,34 @@ import {
 const Projects = () => {
   let { path, url } = useRouteMatch()
 
+  const appendProjectLinks = projects => projects.map(project => {
+    return (
+      <li className='project-btn'>
+        <NavLink 
+          to={`${url}/${project.path}`}
+          activeStyle={{
+            color: "#fff",
+            borderRight: '2px solid white'
+          }}
+        >{project.title}</NavLink>
+      </li>  
+    )  
+  })
+
+  const appendProjects = projects => projects.map(project => {
+    return (
+      <Route path={`${path}/${project.path}`}>
+        <Project project={project} />
+      </Route>
+    )
+  })
+
   return (
     <section className='projects-content'>
       <aside className='projects-nav'>
         <ul className='project-links'>
-          <li className='project-btn'>
+          {appendProjectLinks(projectData)}
+          {/* <li className='project-btn'>
             <NavLink 
               to={`${url}/ticket-cloud`}
               activeStyle={{
@@ -44,7 +68,7 @@ const Projects = () => {
 
             }}
           >Blucifer BNB</NavLink>
-          </li>
+          </li> */}
         </ul>
       </aside>
         <section className='projects-section'>
@@ -52,9 +76,10 @@ const Projects = () => {
             <Route exact path={path}>
               <ProjectsHome />
             </Route>
-            <Route path={`${path}/:projectTitle`}>
+            {appendProjects(projectData)}
+            {/* <Route path={`${path}/:projectTitle`}>
               <Project />
-            </Route>
+            </Route> */}
           </Switch>
         </section>
     </section>
