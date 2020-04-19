@@ -1,4 +1,5 @@
 import React from 'react'
+import ProjectsHome from '../ProjectsHome/ProjectsHome'
 import Project from '../Project/Project'
 import './Projects.scss'
 import {
@@ -14,7 +15,7 @@ const Projects = () => {
   return (
     <section className='projects-content'>
       <aside className='projects-nav'>
-        <ul>
+        <ul className='project-links'>
           <li className='project-btn'>
             <NavLink 
               to={`${url}/ticket-cloud`}
@@ -49,7 +50,7 @@ const Projects = () => {
         <section className='projects-section'>
           <Switch>
             <Route exact path={path}>
-              <h3>Some blurb about this portfolio being a project and the projects to date. </h3>
+              <ProjectsHome />
             </Route>
             <Route path={`${path}/:projectTitle`}>
               <Project />
