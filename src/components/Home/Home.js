@@ -1,6 +1,8 @@
 import React from 'react'
 import { IconContext } from "react-icons"
 import { FaGithub, FaLinkedin, FaInstagram  } from "react-icons/fa"
+import { IoMdOpen } from "react-icons/io";
+import Pdf from '../../assets/resume.pdf'
 import './Home.scss'
 
 const Home = () => {
@@ -15,8 +17,11 @@ const Home = () => {
           <a target="_blank" rel="noopener noreferrer" href='https://github.com/kimmccaskill'>
             <FaGithub />
           </a>
-          <a target="_blank" rel="noopener noreferrer" href='https://www.instagram.com/kimmccaskill/'>
-            <FaInstagram />
+          <a id='resume-btn' target="_blank" rel="noopener noreferrer" href={Pdf}>
+            <div className='resume-block'>
+              <h3 style={{margin: '0px'}}>Resume</h3>
+              <IoMdOpen />
+            </div>
           </a>
         </div>
       </IconContext.Provider>
