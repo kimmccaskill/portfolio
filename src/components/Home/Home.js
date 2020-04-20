@@ -27,7 +27,7 @@ const Home = () => {
       </IconContext.Provider>
       <h1 className='name'>Kim McCaskill</h1>
       <h2 className='my-title'>Software Developer</h2>
-      <p>Quick blurb about me</p>
+      <h3 style={{textAlign: 'center'}}>Welcome! My name is Kim and I am a Software Developer with a focus on Front-End tech.</h3>
     </section>
   )
 }
