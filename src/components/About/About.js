@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section className='content-section'>
       <h2>About Me</h2>
-      <article className='about-card'>
+      <article className='about-card flip'>
         <p className='details'>
           Hi there! My name is Kim McCaskill and I am a recent graduate of Turing School of Software and Design
           here in the beautiful city of Denver, CO. Turing is an intensive 7 month software development program 
@@ -26,7 +26,7 @@ const About = () => {
           a musician and educator.
         </p>
       </article>
-      <article className='about-card'>
+      <article className='about-card flip'>
         <p className='details'>
           My time as a musician was short lived but my time as an educator was not.  After graduating, I went into
           a Training Director role with Chick-fil-A to facilitate orientations as well as onboarding dozens of new 
