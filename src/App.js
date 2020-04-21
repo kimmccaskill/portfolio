@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components'
 import './App.scss';
 import {
   BrowserRouter as Router,
@@ -7,15 +8,27 @@ import {
 } from "react-router-dom";
 import Home from './components/Home/Home'
 import Projects from './components/Projects/Projects'
-import About from './components/About/About'
+import About from './components/About'
 import NavBar from './components/NavBar'
 
 const App = () => {
+  const Content = styled.main`
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    @media (max-width: 1250px) {
+      width: 90%;
+    }
+  `
+  const ContentContainer = styled.div`
+    display: flex;
+    justify-content: center;
+  `
   return (
     <Router>
       <NavBar />
-      <div style={{display: 'flex', justifyContent: 'center'}}>
-        <main className='content'>
+      <ContentContainer>
+        <Content>
           <Switch>
             <Route exact path="/">
               <Home />
@@ -27,8 +40,8 @@ const App = () => {
               <About />
             </Route>
           </Switch>
-        </main>
-      </div>
+        </Content>
+      </ContentContainer>
     </Router>
   );
 }
