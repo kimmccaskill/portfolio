@@ -1,9 +1,9 @@
 import React from 'react';
 import '../App.scss';
 import {
-  NavLink,
   Link
 } from "react-router-dom";
+import PageTab from './PageTab'
 
 const NavBar = () => {
   return (
@@ -13,37 +13,9 @@ const NavBar = () => {
             <div className='logo'><p className='logo-txt'>KM</p></div> 
           </Link>
           <ul className="tab-list">
-            <li className='tab-item'>
-              <NavLink 
-                exact
-                to="/" 
-                activeStyle={{
-                  color: "#fff",
-                  paddingBottom: '10px',
-                  borderBottom: '1px solid white'
-                }}
-              >HOME</NavLink>
-            </li>
-            <li className='tab-item'>
-              <NavLink 
-                to="/projects"
-                activeStyle={{
-                  color: "#fff",
-                  paddingBottom: '10px',
-                  borderBottom: '1px solid white'
-                }}
-              >PROJECTS</NavLink>
-            </li>
-            <li className='tab-item'> 
-              <NavLink 
-                to="/about"
-                activeStyle={{
-                  color: "#fff",
-                  paddingBottom: '10px',
-                  borderBottom: '1px solid white'
-                }}
-              >ABOUT</NavLink>
-            </li>
+            <PageTab tabName='HOME' path='/'/>
+            <PageTab tabName='PROJECTS' path='/projects'/>
+            <PageTab tabName='ABOUT' path='/about'/>
           </ul>
         </div>
       </div>
