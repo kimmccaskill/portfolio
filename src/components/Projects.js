@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import { projectData } from '../assets/project-data'
 import ProjectsHome from './ProjectsHome'
 import Project from './Project'
-import './Projects.scss'
 import {
   Switch,
   Route,
