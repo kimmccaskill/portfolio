@@ -40,35 +40,6 @@ const Projects = () => {
       <aside className='projects-nav'>
         <ul className='project-links'>
           {appendProjectLinks(projectData)}
-          {/* <li className='project-btn'>
-            <NavLink 
-              to={`${url}/ticket-cloud`}
-              activeStyle={{
-                color: "#fff",
-                borderRight: '2px solid white'
-              }}
-            >Ticket Cloud</NavLink>
-          </li>
-          <li className='project-btn'>
-            <NavLink 
-              to={`${url}/ateball`}
-              activeStyle={{
-                color: "#fff",
-                borderRight: '2px solid white'
-
-              }}
-            >Hangry Ateball</NavLink>
-          </li>
-          <li className='project-btn'>
-            <NavLink 
-            to={`${url}/bluciferbnb`}
-            activeStyle={{
-              color: "#fff",
-              borderRight: '2px solid white'
-
-            }}
-          >Blucifer BNB</NavLink>
-          </li> */}
         </ul>
       </aside>
         <section className='projects-section'>
@@ -77,9 +48,6 @@ const Projects = () => {
               <ProjectsHome />
             </Route>
             {appendProjects(projectData)}
-            {/* <Route path={`${path}/:projectTitle`}>
-              <Project />
-            </Route> */}
           </Switch>
         </section>
     </section>
