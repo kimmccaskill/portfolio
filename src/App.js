@@ -6,8 +6,8 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import Home from './components/Home/Home'
-import Projects from './components/Projects/Projects'
+import Home from './components/Home'
+import Projects from './components/Projects'
 import About from './components/About'
 import NavBar from './components/NavBar'
 
