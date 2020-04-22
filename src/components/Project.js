@@ -38,7 +38,6 @@ const Project = ({ project }) => {
   const ProjectImage = styled.img`
     width: 100%;
     border: 1px solid black;
-    margin-bottom: 100px;
   `
   return (
     <ProjectContainer>
@@ -52,6 +51,7 @@ const Project = ({ project }) => {
         </GitHubBtn>
       </TitleBlock>
       <h3>{project.languages}</h3>
+      {appendImages(project.images)}
       <h3 style={{textDecoration: 'underline'}}>Overview</h3>
       <p style={{lineHeight: '2em'}}>{project.overview}</p>
       <h3>Wins</h3>
@@ -59,10 +59,9 @@ const Project = ({ project }) => {
         {appendList(project.wins)}
       </ul>
       <h3>Challenges</h3>
-      <ul>
+      <ul style={{marginBottom: '100px'}}>
         {appendList(project.challenges)}
       </ul>
-      {appendImages(project.images)}
     </ProjectContainer>
   )
 }
