@@ -16,6 +16,7 @@ const App = () => {
     display: flex;
     justify-content: center;
     width: 1200px;
+    padding-bottom: 100px;
     @media (max-width: 1250px) {
       width: 90%;
     }
