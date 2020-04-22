@@ -7,5 +7,5 @@ This app connects to my domain via Firebase.
 
 ### Technologies used:
 - React
-- Sass
+- styled-components
 - Firebase
