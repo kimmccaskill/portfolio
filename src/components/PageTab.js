@@ -1,12 +1,20 @@
 import React from 'react';
-import '../App.scss';
-import {
-  NavLink,
-} from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import styled from 'styled-components'
 
 const PageTab = ({ tabName, path }) => {
+  const List = styled.li`
+    padding-left: 5%;
+    padding-right: 5%;
+    list-style-type: none;
+    @media (max-width: 700px) {
+      padding-left: 1%;
+      padding-right: 1%;
+    }
+  `
+
   return (
-    <li className='tab-item'>
+    <List>
       <NavLink 
         exact
         to={path}
@@ -16,7 +24,7 @@ const PageTab = ({ tabName, path }) => {
           borderBottom: '1px solid white'
         }}
       >{tabName}</NavLink>
-    </li> 
+    </List> 
   )
 }
 

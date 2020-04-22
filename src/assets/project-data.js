@@ -1,7 +1,7 @@
 export const projectData = [
   {
     path: 'ticket-cloud',
-    title: 'TicketCloud',
+    title: 'Ticket Cloud',
     githubLink: 'https://github.com/kimmccaskill/tickets',
     languages: 'JavaScript | React | Redux | HTML/CSS | Jest/Enzyme',
     overview: 'This application is a ticket tracking app for keeping up with events that have tickets going on sale soon.  The user has the option to see which events are coming up soon, save them, search for events by name, and see what events are currently selling tickets.',
