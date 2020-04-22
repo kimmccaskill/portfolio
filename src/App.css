@@ -11,12 +11,6 @@ a {
   font-size: 1.5em;
   padding: 10px;
   margin: 10px;
-  @media (max-width: 600px) {
-    font-size: 1em;
-  }
-  @media (max-width: 500px) {
-    padding: 5px;
-  }
 }
 
 h2 {
@@ -31,4 +25,11 @@ h3 {
 
 p {
   font-family: 'Open sans' sans-serif;
+}
+
+@media (max-width: 600px) {
+  a {
+    font-size: 1em;
+    padding: 5px;
+  }
 }

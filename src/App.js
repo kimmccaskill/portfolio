@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
-import './App.scss';
+import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
