@@ -7,5 +7,6 @@ This app connects to my domain via Firebase.
 
 ### Technologies used:
 - React
-- styled-components
+- Styled-Components
+- React Router
 - Firebase
