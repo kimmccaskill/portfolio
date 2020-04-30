@@ -35,49 +35,7 @@ const Projects = () => {
     )
   })
 
-  const ProjectsContainer = styled.section`
-    display: flex;
-    width: 100%;
-    padding-top: 5%;
-    @media (max-width: 500px) {
-      flex-direction: column;
-      align-items: center;
-    }
-  `
-  const ProjectsNav = styled.aside`
-    width: 30%;
-    font-family: 'Montserrat', sans-serif;
-    @media (max-width: 500px) {
-      width: auto;
-    }
-  `
-  const ProjectLinks = styled.ul`
-    padding-inline-start: 0px;
-    width: 100%;
-    @media (max-width: 500px) {
-      display: flex;
-      width: 100%;
-    }
-  `
-  const ProjectsSection = styled.section`
-    width: inherit;
-    color: white;
-    font-family: 'Open sans' sans-serif;
-  `
-  const ProjectBtn = styled.li`
-    list-style-type: none;
-    margin-bottom: 30px;
-    a {
-      text-decoration: none;
-      margin: 0px;
-      color: #808080;
-      width: 75%;
-      display: block;
-      @media (max-width: 500px) {
-        width: 100%;
-      }
-    }
-  `
+
   return (
     <ProjectsContainer>
       <ProjectsNav>
@@ -96,5 +54,49 @@ const Projects = () => {
     </ProjectsContainer>
   )
 }
+
+const ProjectsContainer = styled.section`
+display: flex;
+width: 100%;
+padding-top: 5%;
+@media (max-width: 500px) {
+  flex-direction: column;
+  align-items: center;
+}
+`
+const ProjectsNav = styled.aside`
+width: 30%;
+font-family: 'Montserrat', sans-serif;
+@media (max-width: 500px) {
+  width: auto;
+}
+`
+const ProjectLinks = styled.ul`
+padding-inline-start: 0px;
+width: 100%;
+@media (max-width: 500px) {
+  display: flex;
+  width: 100%;
+}
+`
+const ProjectsSection = styled.section`
+width: inherit;
+color: white;
+font-family: 'Open sans' sans-serif;
+`
+const ProjectBtn = styled.li`
+list-style-type: none;
+margin-bottom: 30px;
+a {
+  text-decoration: none;
+  margin: 0px;
+  color: #808080;
+  width: 75%;
+  display: block;
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+}
+`
 
 export default Projects 

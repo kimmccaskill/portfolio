@@ -12,19 +12,6 @@ import About from './components/About'
 import NavBar from './components/NavBar'
 
 const App = () => {
-  const Content = styled.main`
-    display: flex;
-    justify-content: center;
-    width: 1200px;
-    padding-bottom: 100px;
-    @media (max-width: 1250px) {
-      width: 90%;
-    }
-  `
-  const ContentContainer = styled.div`
-    display: flex;
-    justify-content: center;
-  `
   return (
     <Router>
       <NavBar />
@@ -46,5 +33,19 @@ const App = () => {
     </Router>
   );
 }
+
+const Content = styled.main`
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+  padding-bottom: 100px;
+  @media (max-width: 1250px) {
+    width: 90%;
+  }
+`
+const ContentContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`
 
 export default App;

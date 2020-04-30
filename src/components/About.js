@@ -6,62 +6,7 @@ import Hotel from '../assets/hotel.jpg'
 import Climb from '../assets/climb.jpg'
 
 const About = () => {
-  const ContentSection = styled.section`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #fff;
-    width: 1200px;
-    @media (max-width: 1250px) {
-      width: 90%;
-    }
-  `
-  const AboutCard = styled.article`
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 80%;
-    margin-top: 5%;
-    padding-bottom: 5%;
-    border-bottom: 1px solid grey;
-    @media (max-width: 950px) {
-      flex-wrap: wrap;
-    }
-    @media (max-width: 700px) {
-      flex-direction: column;
-      align-items: center;
-    }
-    @media (max-width: 500px) {
-      width: 95%;
-    }
-  `
-  const FlippedCard = styled(AboutCard)`
-    @media (max-width: 950px) {
-      flex-direction: column-reverse;
-      align-items: center;
-    }
-  `
-  const Details = styled.p`
-    padding-left: 20px;
-    padding-right: 20px;
-    line-height: 2em;
-    @media (max-width: 950px) {
-      line-height: 1.5em;
-    }
-    @media (max-width: 500px) {
-      padding: 0px;
-    }
-  `
-  const Image = styled.img`
-    min-width: 300px;
-    max-width: 300px;
-    height: 250px;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    border: 1px solid grey;
-  `
-
+  
   return (
     <ContentSection>
       <h2>About Me</h2>
@@ -111,4 +56,59 @@ const About = () => {
   )
 }
 
+const ContentSection = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  width: 1200px;
+  @media (max-width: 1250px) {
+    width: 90%;
+  }
+`
+const AboutCard = styled.article`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin-top: 5%;
+  padding-bottom: 5%;
+  border-bottom: 1px solid grey;
+  @media (max-width: 950px) {
+    flex-wrap: wrap;
+  }
+  @media (max-width: 700px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  @media (max-width: 500px) {
+    width: 95%;
+  }
+`
+const FlippedCard = styled(AboutCard)`
+  @media (max-width: 950px) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+`
+const Details = styled.p`
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 2em;
+  @media (max-width: 950px) {
+    line-height: 1.5em;
+  }
+  @media (max-width: 500px) {
+    padding: 0px;
+  }
+`
+const Image = styled.img`
+  min-width: 300px;
+  max-width: 300px;
+  height: 250px;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  border: 1px solid grey;
+`
 export default About

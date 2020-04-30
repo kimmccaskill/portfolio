@@ -6,39 +6,6 @@ const Project = ({ project }) => {
   const appendList = list => list.map(listItem => <li style={{lineHeight: '2em'}}>{listItem}</li>)
   const appendImages = images => images.map(img => <ProjectImage style={img.width ? {width: img.width, height: img.height} : null} alt={project.title + 'image'} src={img.link} />)
   
-  const ProjectContainer = styled.div`
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-    @media (max-width: 500px) {
-      align-items: center;
-      padding-left: 30px;
-    }
-  `
-  const TitleBlock = styled.div`
-    display: flex;
-    align-items: center;
-  `
-  const GitHubBtn = styled.a`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  `
-  const GitHubBlock = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid white;
-    border-radius: 15px;
-    padding: 5px;
-    font-size: 16px;
-    color: #fff;
-    width: 100px;
-  `
-  const ProjectImage = styled.img`
-    width: 100%;
-    border: 1px solid black;
-  `
   return (
     <ProjectContainer>
       <TitleBlock>
@@ -66,4 +33,37 @@ const Project = ({ project }) => {
   )
 }
 
+const ProjectContainer = styled.div`
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 500px) {
+    align-items: center;
+    padding-left: 30px;
+  }
+`
+const TitleBlock = styled.div`
+  display: flex;
+  align-items: center;
+`
+const GitHubBtn = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+const GitHubBlock = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 5px;
+  font-size: 16px;
+  color: #fff;
+  width: 100px;
+`
+const ProjectImage = styled.img`
+  width: 100%;
+  border: 1px solid black;
+`
 export default Project

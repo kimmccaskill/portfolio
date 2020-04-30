@@ -3,21 +3,7 @@ import styled from 'styled-components'
 import { IoMdOpen } from "react-icons/io";
 
 const ProjectsHome = () => {
-  const MyProjects = styled.h2`
-    margin: 0px;
-    line-height: 2em;
-  `
-  const GitHubBlock = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid white;
-    border-radius: 15px;
-    padding: 5px;
-    font-size: 16px;
-    color: #fff;
-    width: 100px;
-  `
+
   return (
     <div>
       <MyProjects>My Projects</MyProjects>
@@ -33,5 +19,21 @@ const ProjectsHome = () => {
     </div>
   )
 }
+
+const MyProjects = styled.h2`
+margin: 0px;
+line-height: 2em;
+`
+const GitHubBlock = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+border: 2px solid white;
+border-radius: 15px;
+padding: 5px;
+font-size: 16px;
+color: #fff;
+width: 100px;
+`
 
 export default ProjectsHome

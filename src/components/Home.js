@@ -7,53 +7,6 @@ import Pdf from '../assets/resume.pdf'
 import MyHeadshot from '../assets/headshot.jpg'
 
 const Home = () => {
-  const ContentSection = styled.section`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 1200px;
-    color: #fff;
-    padding-top: 5%;
-    @media (max-width: 1250px) {
-      width: 90%;
-    }
-  `
-  const Headshot = styled.img`
-    width: 300px;
-    height: 300px;
-    margin: 20px;
-    border-radius: 50%;
-    border: 1px solid black;
-    object-fit: cover;
-    @media (max-width: 450px) {
-      width: 200px;
-      height: 200px;
-    }
-  `
-  const LinksContainer = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
-  `
-  const ResumeContainer = styled.div`
-    display: flex;
-    align-items: center;
-    border: 2px solid white;
-    border-radius: 15px;
-    padding: 10px;
-    font-size: .7em;
-    color: #fff;
-  `
-  const MyName = styled.h1`
-    font-size: 60px;
-    margin: 20px;
-    font-family: 'Montserrat', sans-serif;
-    @media (max-width: 600px) {
-      font-size: 36px;
-    }
-  `
   return (
     <ContentSection>
       <Headshot alt='Kims headshot' src={MyHeadshot} />
@@ -80,4 +33,51 @@ const Home = () => {
   )
 }
 
+const ContentSection = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1200px;
+  color: #fff;
+  padding-top: 5%;
+  @media (max-width: 1250px) {
+    width: 90%;
+  }
+`
+const Headshot = styled.img`
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  border-radius: 50%;
+  border: 1px solid black;
+  object-fit: cover;
+  @media (max-width: 450px) {
+    width: 200px;
+    height: 200px;
+  }
+`
+const LinksContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+`
+const ResumeContainer = styled.div`
+  display: flex;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: .7em;
+  color: #fff;
+`
+const MyName = styled.h1`
+  font-size: 60px;
+  margin: 20px;
+  font-family: 'Montserrat', sans-serif;
+  @media (max-width: 600px) {
+    font-size: 36px;
+  }
+`
 export default Home
